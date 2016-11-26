@@ -1,0 +1,11 @@
+<h1>Sorted array</h1>
+<a href={% url 'qsort:index' %}>Sort another one?</a>
+{% if array %}
+<ul>
+{% for num in array %}
+	<li>{{num}}</li>
+{% endfor %}
+</ul>
+{% else %}
+<h3>Please enter a ceil number array next time</h3>
+{% endif %}

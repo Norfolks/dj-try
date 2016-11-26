@@ -1,0 +1,8 @@
+<h1>Wellcome to Sorting app</h1>
+<form action="{% url 'qsort:sort_it' %}" method="post">
+{%csrf_token%}
+<h2>Enter sequence to sort:</h2>
+<textarea name="array">
+</textarea>
+<input type="submit" value="Send"/>
+</form>
