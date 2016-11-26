@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-from .quik_sort import parallel_quik_sort
+from .quik_sort import quik_sort as qqsort
 
 
 def index(request):
@@ -10,5 +10,5 @@ def index(request):
 def sort_it(request):
 	array = request.POST['array']
 	array = [int(num) for num in array.split()]
-	parallel_quik_sort(array)
+	qqsort(array)
 	return render(request, 'sorted.html', {'array': array})
