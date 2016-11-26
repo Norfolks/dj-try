@@ -25,7 +25,7 @@ SECRET_KEY = 'e(5i(!-ac%1ub223*c&ft4^8!1*=ka=ca!^n@8#=287y^78+=d'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['http://norfolk.pythonanywhere.com/']
+ALLOWED_HOSTS = ['norfolk.pythonanywhere.com']
 
 
 # Application definition
